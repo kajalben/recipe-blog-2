@@ -1,0 +1,56 @@
+.recipe-grid-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+.recipe-grid-content {
+  margin-top: 2rem;
+  position: relative;
+  display: inline-block;
+  height: 186.15px;
+  width: 300px;
+}
+
+.recipe-grid-image {
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.recipe-grid-image:hover {
+  transform: scale(1.1);
+}
+
+.recipe-grid-name {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25%;
+  color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* .back-btn {
+  font-size: 3rem;
+  color: var(--drak-yellow);
+  padding: 0.2rem;
+  cursor: pointer;
+  
+}
+.back-btn i{
+  transition: transform 0.55s ease-in-out;
+}
+
+
+.back-btn i:hover{
+  transform: scale(1.1);
+  color: var(--light-yellow);
+} */

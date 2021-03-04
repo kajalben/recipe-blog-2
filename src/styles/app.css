@@ -1,0 +1,23 @@
+.main-container {
+  width: 100%;
+  min-height: 90vh;
+
+}
+.error-message {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+@media all and (max-width: 992px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@media all and (max-width: 688px) {
+  body {
+    font-size: 12px !important;
+  }
+}

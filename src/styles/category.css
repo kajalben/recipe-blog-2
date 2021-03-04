@@ -1,0 +1,26 @@
+.category-container{
+    width: 80%;
+    margin: auto;
+}
+.category-content{
+    margin: 2rem 0;
+}
+
+.category-content h3{
+    position: relative;
+    display: inline-block;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.category-content h3::before{
+    content: "";
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -10px;
+    background-color: var(--light-yellow);
+    z-index: -1;
+
+}
+

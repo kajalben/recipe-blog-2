@@ -1,0 +1,64 @@
+.headerContainer {
+  height: 20rem;
+  background-image: url("../image/Food-Blog.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+Button.textColor {
+  color: white;
+}
+
+Button.bgColor {
+  background: var(--light-yellow);
+}
+
+.navbarContainer {
+  background-color: var(--light-gray);
+}
+
+.claimContainer {
+  height: 17rem;
+  align-items: center;
+}
+
+.claimContainer h1 {
+  font-size: 6rem;
+  color: whitesmoke;
+  background-color: var(--drak-yellow);
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.home-link {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.home-link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+.active-link {
+  color: black;
+}
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--drak-yellow) !important;
+}
+@media all and (max-width: 992px) {
+  .claimContainer h1 {
+    font-size: 4rem;
+  }
+}
+
+@media all and (max-width: 688px) {
+  .claimContainer h1 {
+    font-size: 3rem;
+  }
+}
