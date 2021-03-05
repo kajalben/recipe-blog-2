@@ -7,31 +7,29 @@ const RecipeDetail = ({ breakfast, salad, appetizer }) => {
 
   const filterRecipe = (recipes) => {
     return recipes
-      .filter((recipe) => recipe.sys.id == id)
+      .filter((recipe) => recipe.id == id)
       .map((recipe) => {
         return (
-          <div key={recipe.sys.id} className="recipe-container">
+          <div key={recipe.id} className="recipe-container">
             <img
               className="recipe-image"
-              src={recipe.image.url}
+              src={`${process.env.REACT_APP_DEV_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
               alt={recipe.name}
             />
             <div className="recipe-name">
               <h3>{recipe.name}</h3>
-              <p>{recipe.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: recipe.direction }}></p>
             </div>
 
             <div className="recipe-content recipe-ingredients">
               <h3>Ingredients</h3>
-              <p>{marked(recipe.items)}</p>
-              {/* <p dangerouslySetInnerHTML={{ __html: marked(recipe.items) }}></p> */}
+              <p dangerouslySetInnerHTML={{ __html: recipe.items }}></p>
             </div>
             <div className="recipe-content recipe-direction">
               <h3>Directions</h3>
-              <p>{marked(recipe.direction)}</p>
-              {/* <p
-                dangerouslySetInnerHTML={{ __html: marked(recipe.direction) }}
-              ></p> */}
+              <p
+                dangerouslySetInnerHTML={{ __html: recipe.description }}
+              ></p>
             </div>
           </div>
         );

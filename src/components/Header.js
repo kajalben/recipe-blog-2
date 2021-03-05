@@ -41,9 +41,9 @@ const Header = () => {
                   <NavLink
                     className="home-link"
                     activeClassName="active-link"
-                    to="/breackfast"
+                    to="/breakfast"
                   >
-                    Breackfast
+                    Breakfast
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>

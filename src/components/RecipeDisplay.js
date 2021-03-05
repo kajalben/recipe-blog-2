@@ -50,12 +50,12 @@ const RecipeDisplay = (props) => {
         }
       >
         {props.recipes.map((recipe) => (
-          <GridListTile style={{ cursor: "pointer" }} key={recipe.sys.id}>
+          <GridListTile style={{ cursor: "pointer" }} key={recipe.id}>
             <img
-              src={recipe.image.url}
+              src={`${process.env.REACT_APP_DEV_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
               alt={recipe.name}
               onClick={(id, category) =>
-                haldleClick(recipe.sys.id, recipe.category)
+                haldleClick(recipe.id, recipe.category)
               }
             />
             <GridListTileBar

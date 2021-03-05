@@ -11,13 +11,13 @@ const Recipes = ({ breakfast, salad, appetizer }) => {
   const displayRecipes = (recipes) => {
     return recipes.map((recipe) => {
       return (
-        <div className="recipe-grid-content" key={recipe.sys.id}>
+        <div className="recipe-grid-content" key={recipe.id}>
           <img
             className="recipe-grid-image"
-            src={recipe.image.url}
+            src={`${process.env.REACT_APP_DEV_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
             alt={recipe.name}
             onClick={(id, category) =>
-              haldleClick(recipe.sys.id, recipe.category)
+              haldleClick(recipe.id, recipe.category)
             }
           />
           <p className="recipe-grid-name">{recipe.name}</p>
