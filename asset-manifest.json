@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/recipe-blog-2/static/css/main.c0da915f.chunk.css",
+    "main.js": "/recipe-blog-2/static/js/main.256b7356.chunk.js",
+    "main.js.map": "/recipe-blog-2/static/js/main.256b7356.chunk.js.map",
+    "runtime-main.js": "/recipe-blog-2/static/js/runtime-main.8bc1669b.js",
+    "runtime-main.js.map": "/recipe-blog-2/static/js/runtime-main.8bc1669b.js.map",
+    "static/css/2.150d169a.chunk.css": "/recipe-blog-2/static/css/2.150d169a.chunk.css",
+    "static/js/2.aad04346.chunk.js": "/recipe-blog-2/static/js/2.aad04346.chunk.js",
+    "static/js/2.aad04346.chunk.js.map": "/recipe-blog-2/static/js/2.aad04346.chunk.js.map",
+    "index.html": "/recipe-blog-2/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/recipe-blog-2/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.c0da915f.chunk.css.map": "/recipe-blog-2/static/css/main.c0da915f.chunk.css.map",
+    "static/js/2.aad04346.chunk.js.LICENSE.txt": "/recipe-blog-2/static/js/2.aad04346.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/recipe-blog-2/static/media/Food-Blog.36fbaa86.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bc1669b.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.aad04346.chunk.js",
+    "static/css/main.c0da915f.chunk.css",
+    "static/js/main.256b7356.chunk.js"
+  ]
+}
