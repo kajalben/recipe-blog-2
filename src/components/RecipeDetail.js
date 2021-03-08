@@ -13,7 +13,7 @@ const RecipeDetail = ({ breakfast, salad, appetizer }) => {
           <div key={recipe.id} className="recipe-container">
             <img
               className="recipe-image"
-              src={`${process.env.REACT_APP_DEV_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
+              src={`${process.env.REACT_APP_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
               alt={recipe.name}
             />
             <div className="recipe-name">

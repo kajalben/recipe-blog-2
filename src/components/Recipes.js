@@ -14,7 +14,7 @@ const Recipes = ({ breakfast, salad, appetizer }) => {
         <div className="recipe-grid-content" key={recipe.id}>
           <img
             className="recipe-grid-image"
-            src={`${process.env.REACT_APP_DEV_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
+            src={`${process.env.REACT_APP_SERVER}/images/${recipe.category}/${recipe.image}.jpg`}
             alt={recipe.name}
             onClick={(id, category) =>
               haldleClick(recipe.id, recipe.category)

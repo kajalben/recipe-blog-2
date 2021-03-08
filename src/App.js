@@ -26,7 +26,7 @@ function App() {
     setIsLoading(true);
     categorys.map( category  =>{
       fetchData(
-        `http://localhost:3030/api/recipes/category/${category}`
+        `https://recipe-blog-api.herokuapp.com/api/recipes/category/${category}`
       )
       .then( data => {
         setIsLoading(false);
